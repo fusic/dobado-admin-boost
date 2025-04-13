@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-500: var(--color-indigo-500);
+  --color-primary-600: var(--color-indigo-600);
+}

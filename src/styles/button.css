@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer components {
+  .btn {
+    border-radius: var(--radius-sm);
+    padding: --spacing(1.5) --spacing(3);
+    font-weight: var(--font-weight-semibold);
+
+    &:focus-visible {
+      outline-width: 2px;
+      outline-offset: 2px;
+      outline-style: solid;
+    }
+  }
+
+  .btn-primary {
+    background-color: var(--color-primary-600);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-primary-500);
+    }
+
+    &:focus-visible {
+      outline-color: var(--color-primary-600);
+    }
+  }
+}

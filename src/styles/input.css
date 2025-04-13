@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@layer components {
+  .label {
+    display: block;
+  }
+
+  .text-field {
+    display: block;
+    border-radius: var(--radius-sm);
+    background-color: var(--color-white);
+    padding: --spacing(1.5) --spacing(3);
+    outline-width: 1px;
+    outline-style: solid;
+    outline-offset: -1px;
+    outline-color: var(--color-gray-300);
+
+    &:placeholder {
+      color: var(--color-gray-400);
+    }
+
+    &:focus {
+      outline-color: var(--color-primary-600);
+      outline-offset: -2px;
+      outline-width: 2px;
+    }
+  }
+}
