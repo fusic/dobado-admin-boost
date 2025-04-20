@@ -6,12 +6,10 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <main class="flex relative">
-      <nav class="max-w-72 w-full bg-gray-900 h-svh p-6">
-        <div class="text-white text-xl font-bold">
-          サービス名とか
-        </div>
-        <ul class="mt-10 text-gray-400 space-y-1">
+    <main class="relative flex">
+      <nav class="h-svh w-full max-w-72 bg-gray-900 p-6">
+        <div class="text-xl font-bold text-white">サービス名とか</div>
+        <ul class="mt-10 space-y-1 text-gray-400">
           <li>
             <a href="/" class="menu-item active">トップページ</a>
           </li>
@@ -20,29 +18,101 @@
           </li>
         </ul>
       </nav>
-      <div class="flex-1 flex flex-col">
-        <header class="bg-white">
-          <nav class="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <div class="flex flex-1 flex-col">
+        <header class="bg-white shadow-sm">
+          <nav
+            class="mx-auto flex items-center justify-between p-6 lg:px-8"
+            aria-label="Global"
+          >
             <div class="flex lg:flex-1">
               <a href="#" class="-m-1.5 p-1.5">
                 <span class="sr-only">Your Company</span>
-                <img class="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="">
+                <img
+                  class="h-8 w-auto"
+                  src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
+                  alt=""
+                />
               </a>
             </div>
             <div class="flex lg:hidden">
-              <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+              <button
+                type="button"
+                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              >
                 <span class="sr-only">Open main menu</span>
-                <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                <svg
+                  class="size-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  data-slot="icon"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
                 </svg>
               </button>
             </div>
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" class="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+              <a href="#" class="text-sm/6 font-semibold text-gray-900"
+                >Log in <span aria-hidden="true">&rarr;</span></a
+              >
             </div>
           </nav>
         </header>
-        <div class="flex-1 bg-gray-300 p-8">main2</div>
+        <div class="flex-1 p-8 bg-gray-100">
+          <h1 class="title">トップページ</h1>
+          <div class="card mt-4 space-y-6">
+            <div>
+              <label for="email" class="label">メールアドレス</label>
+              <div class="mt-2">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  autocomplete="email"
+                  required
+                  class="input w-full"
+                  placeholder="user@example.com"
+                />
+                <p class="mt-1 caption">メールアドレスを入力してください</p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="flex-1">
+                <label for="password" class="label">パスワード</label>
+                <div class="mt-2">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    autocomplete="password"
+                    required
+                    class="input input-error w-full"
+                  />
+                  <p class="mt-1 caption caption-error">パスワードを入力してください</p>
+                </div>
+              </div>
+              <div class="flex-1">
+                <label for="password" class="label">パスワード確認用</label>
+                <div class="mt-2">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    autocomplete="password"
+                    required
+                    class="input w-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script type="module" src="/src/main.ts"></script>

@@ -2,8 +2,9 @@
 
 @layer components {
   .card {
-    padding: --spacing(12);
+    padding: --spacing(8);
     border-radius: var(--radius-sm);
-    box-shadow: var(--shadow-md);
+    border: 1px solid var(--color-gray-200);
+    background-color: var(--color-white);
   }
 }

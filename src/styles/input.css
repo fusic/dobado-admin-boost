@@ -5,7 +5,7 @@
     display: block;
   }
 
-  .text-field {
+  .input {
     display: block;
     border-radius: var(--radius-sm);
     background-color: var(--color-white);
@@ -25,4 +25,23 @@
       outline-width: 2px;
     }
   }
+
+  .input-error {
+    outline-color: var(--color-error-600);
+
+    &:focus {
+      outline-color: var(--color-error-600);
+    }
+  }
+
+  .caption {
+    font-size: var(--text-sm);
+    color: var(--color-gray-500);
+
+  }
+
+  .caption-error {
+    color: var(--color-error-600);
+  }
+
 }
