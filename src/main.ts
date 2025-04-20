@@ -6,3 +6,4 @@ import "./styles/card.css";
 import "./styles/sidebar.css";
 import "./styles/typography.css";
 import "./styles/caption.css";
+import "./styles/checkbox.css";

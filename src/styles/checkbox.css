@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+.checkbox {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  gap: --spacing(1);
+
+  & > input[type="checkbox"] {
+    width: --spacing(4);
+    height: --spacing(4);
+    accent-color: var(--color-primary-600);
+    appearance: none;
+    border: 1px solid var(--color-gray-300);
+    border-radius: var(--radius-sm);
+    position: relative;
+
+    &:checked {
+      background-color: var(--color-primary-600);
+      border-color: var(--color-primary-600);
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0.35em;
+        height: 0.6em;
+        border: solid #fff;
+        border-width: 0 0.18em 0.18em 0;
+        transform: translate(-50%, -60%) rotate(45deg);
+      }
+    }
+  }
+
+  &.checkbox-error {
+    & > input[type="checkbox"] {
+      border-color: var(--color-error-600);
+
+      &:checked {
+        background-color: var(--color-error-600);
+        border-color: var(--color-error-600);
+      }
+    }
+  }
+}
+
+.checkbox-group.checkbox-group-error {
+  & input[type="checkbox"] {
+    border-color: var(--color-error-600);
+
+    &:checked {
+      background-color: var(--color-error-600);
+      border-color: var(--color-error-600);
+    }
+  }
+}
