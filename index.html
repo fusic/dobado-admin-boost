@@ -64,50 +64,79 @@
             </div>
           </nav>
         </header>
-        <div class="flex-1 p-8 bg-gray-100">
+        <div class="flex-1 bg-gray-100 p-8">
           <h1 class="title">トップページ</h1>
-          <div class="card mt-4 space-y-6">
-            <div>
-              <label for="email" class="label">メールアドレス</label>
-              <div class="mt-2">
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  autocomplete="email"
-                  required
-                  class="input w-full"
-                  placeholder="user@example.com"
-                />
-                <p class="mt-1 caption">メールアドレスを入力してください</p>
-              </div>
-            </div>
-            <div class="flex gap-6">
-              <div class="flex-1">
-                <label for="password" class="label">パスワード</label>
+          <div class="mt-4 grid grid-cols-2 gap-4">
+            <div class="card space-y-6">
+              <h2 class="card-title">テキストフィールド</h2>
+              <div>
+                <label for="email" class="label">メールアドレス</label>
                 <div class="mt-2">
                   <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    autocomplete="password"
-                    required
-                    class="input input-error w-full"
-                  />
-                  <p class="mt-1 caption caption-error">パスワードを入力してください</p>
-                </div>
-              </div>
-              <div class="flex-1">
-                <label for="password" class="label">パスワード確認用</label>
-                <div class="mt-2">
-                  <input
-                    type="password"
-                    name="password"
-                    id="password"
-                    autocomplete="password"
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
                     required
                     class="input w-full"
+                    placeholder="user@example.com"
                   />
+                  <div class="caption-group mt-1">
+                    <p class="caption">メールアドレスを入力してください</p>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-2 gap-6">
+                <div>
+                  <label for="password" class="label">パスワード</label>
+                  <div class="mt-2">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      autocomplete="password"
+                      required
+                      class="input input-error w-full"
+                    />
+                    <div class="caption-group mt-1">
+                      <p class="caption caption-error">
+                        パスワードを入力してください
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="password" class="label">パスワード確認用</label>
+                  <div class="mt-2">
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      autocomplete="password"
+                      required
+                      class="input w-full"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card space-y-6">
+              <h2 class="card-title">テキストエリア</h2>
+              <div>
+                <label for="bio" class="label">自己紹介</label>
+                <div class="mt-2">
+                  <textarea
+                    type="bio"
+                    name="bio"
+                    id="bio"
+                    required
+                    class="input w-full"
+                    placeholder="自己紹介を入力してください"
+                  ></textarea>
+                  <div class="caption-group mt-1">
+                    <p class="caption">自己紹介を入力してください</p>
+                    <p class="caption caption-right">1000文字以内</p>
+                  </div>
                 </div>
               </div>
             </div>

@@ -33,15 +33,4 @@
       outline-color: var(--color-error-600);
     }
   }
-
-  .caption {
-    font-size: var(--text-sm);
-    color: var(--color-gray-500);
-
-  }
-
-  .caption-error {
-    color: var(--color-error-600);
-  }
-
 }
