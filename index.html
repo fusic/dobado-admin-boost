@@ -67,9 +67,9 @@
         <div class="flex-1 bg-gray-100 p-8">
           <h1 class="title">トップページ</h1>
           <div class="mt-4 grid grid-cols-2 gap-4">
-            <div class="card space-y-6">
-              <h2 class="card-title">テキストフィールド</h2>
-              <div>
+            <div class="card grid grid-cols-2 gap-6">
+              <h2 class="card-title col-span-full">テキストフィールド</h2>
+              <div class="col-span-full">
                 <label for="email" class="label">メールアドレス</label>
                 <div class="mt-2">
                   <input
@@ -86,37 +86,35 @@
                   </div>
                 </div>
               </div>
-              <div class="grid grid-cols-2 gap-6">
-                <div>
-                  <label for="password" class="label">パスワード</label>
-                  <div class="mt-2">
-                    <input
-                      type="password"
-                      name="password"
-                      id="password"
-                      autocomplete="password"
-                      required
-                      class="input input-error w-full"
-                    />
-                    <div class="caption-group mt-1">
-                      <p class="caption caption-error">
-                        パスワードを入力してください
-                      </p>
-                    </div>
+              <div>
+                <label for="password" class="label">パスワード</label>
+                <div class="mt-2">
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    autocomplete="new-password"
+                    required
+                    class="input input-error w-full"
+                  />
+                  <div class="caption-group mt-1">
+                    <p class="caption caption-error">
+                      パスワードを入力してください
+                    </p>
                   </div>
                 </div>
-                <div>
-                  <label for="password" class="label">パスワード確認用</label>
-                  <div class="mt-2">
-                    <input
-                      type="password"
-                      name="password"
-                      id="password"
-                      autocomplete="password"
-                      required
-                      class="input w-full"
-                    />
-                  </div>
+              </div>
+              <div>
+                <label for="password" class="label">パスワード確認用</label>
+                <div class="mt-2">
+                  <input
+                    type="password"
+                    name="password-confirm"
+                    id="password-confirm"
+                    autocomplete="new-password"
+                    required
+                    class="input w-full"
+                  />
                 </div>
               </div>
             </div>
@@ -193,7 +191,7 @@
               </div>
               <fieldset>
                 <legend class="font-bold">都道府県1</legend>
-                <div class="flex gap-4 mt-1 radio-group radio-group-error">
+                <div class="flex flex-wrap gap-4 mt-1 radio-group radio-group-error">
                   <label class="radio">
                     <input type="radio" name="prefecture1" checked />
                     <div>北海道</div>

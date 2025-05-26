@@ -37,6 +37,10 @@
 
       &:checked {
         border-color: var(--color-error-600);
+
+        &:before {
+          background: var(--color-error-600);
+        }
       }
     }
   }
