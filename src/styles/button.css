@@ -5,6 +5,10 @@
     border-radius: var(--radius-sm);
     padding: --spacing(1.5) --spacing(3);
     font-weight: var(--font-weight-semibold);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: --spacing(1.5);
 
     &:focus-visible {
       outline-width: 2px;

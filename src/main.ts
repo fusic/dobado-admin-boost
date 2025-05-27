@@ -8,3 +8,6 @@ import "./styles/typography.css";
 import "./styles/caption.css";
 import "./styles/checkbox.css";
 import "./styles/radio.css";
+import "./styles/table.css";
+import "./styles/tag.css";
+import "./styles/pagination.css";

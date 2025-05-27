@@ -2,3 +2,7 @@
   font-size: var(--text-2xl);
   font-weight: var(--font-weight-bold);
 }
+
+.subtitle {
+  color: var(--color-gray-600);
+}

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@layer components {
+  .tag {
+    padding: --spacing(1) --spacing(2);
+    border-radius: calc(infinity * 1px);
+    font-size: var(--text-xs);
+
+    &.tag-green {
+      background-color: var(--color-green-100);
+      color: var(--color-green-800);
+    }
+
+    &.tag-red {
+      background-color: var(--color-red-100);
+      color: var(--color-red-800);
+    }
+
+    &.tag-gray {
+      background-color: var(--color-gray-100);
+      color: var(--color-gray-800);
+    }
+  }
+}
