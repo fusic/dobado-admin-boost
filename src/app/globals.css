@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "./_styles/button.css";
+@import "./_styles/caption.css";
+@import "./_styles/card.css";
+@import "./_styles/checkbox.css";
+@import "./_styles/heading.css";
+@import "./_styles/input.css";
+@import "./_styles/pagination.css";
+@import "./_styles/radio.css";
+@import "./_styles/sidebar.css";
+@import "./_styles/table.css";
+@import "./_styles/tag.css";
+@import "./_styles/typography.css";
+
+@theme {
+  --color-primary-500: var(--color-indigo-500);
+  --color-primary-600: var(--color-indigo-600);
+  --color-error-600: var(--color-red-600);
+}
+

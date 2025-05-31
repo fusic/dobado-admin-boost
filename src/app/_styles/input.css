@@ -15,7 +15,7 @@
     outline-offset: -1px;
     outline-color: var(--color-gray-300);
 
-    &:placeholder {
+    &::placeholder {
       color: var(--color-gray-400);
     }
 
